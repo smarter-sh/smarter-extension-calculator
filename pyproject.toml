@@ -1,0 +1,19 @@
+[project]
+name = "smarter-extension-calculator"
+version = "0.1.0"
+description = "Evaluates arithmetic and math-function expressions exactly, so that LLMs don't guess."
+authors = [{ name = "The Smarter Project" }]
+license = "AGPL-3.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/smarter-sh/smarter-extension-calculator"
+
+[tool.smarter]
+slug = "calculator"
+package = "calculator"
+display-name = "Calculator"
+requires-smarter = ">=0.27"
+tools = ["calculator.tools:Calculator"]
+timeout = 5
