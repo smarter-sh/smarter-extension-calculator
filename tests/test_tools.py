@@ -51,6 +51,10 @@ class TestEvaluator(unittest.TestCase):
 class TestCalculator(unittest.TestCase):
     """Test the tool."""
 
+    def test_cache_ttl(self):
+        """The tool changes nothing, and its result doesn't depend on who asks, so a result is cached for an hour."""
+        self.assertEqual(Calculator.cache_ttl, 3600)
+
     def test_call(self):
         self.assertEqual(call_tool(Calculator, {"expression": "2 + 2"}), {"result": 4})
         self.assertEqual(

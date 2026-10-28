@@ -12,7 +12,9 @@ An official [Smarter Extension](https://docs.smarter.sh/en/latest/smarter-framew
 whose `calculator` tool evaluates a math expression, such as `2 + 3 * (4 - 1)` or
 `sin(pi / 2) + log(10)`, exactly, rather than letting the LLM guess. Expressions are parsed with
 Python's `ast` module, and only numbers, arithmetic operators and the `math` module's functions
-are evaluated: never arbitrary code.
+are evaluated: never arbitrary code. A result is cached for an hour (the tool's `cache_ttl`), so
+the same expression, from any LLMClient, is answered from the cache on platforms that cache tool
+results.
 
 List it in an LLMClient's manifest:
 

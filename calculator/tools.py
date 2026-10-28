@@ -26,6 +26,8 @@ class Calculator(SmarterExtensionTool):
 
     name = "calculator"
     arguments_model = CalculatorArguments
+    cache_ttl = 3600
+    """An expression always has the same result, whoever asks."""
 
     def call(self, arguments: CalculatorArguments, context: ExtensionContext) -> JsonValue:
         try:
