@@ -1,6 +1,6 @@
 [project]
 name = "smarter-extension-calculator"
-version = "0.2.0"
+version = "0.2.1"
 description = "Evaluates arithmetic and math-function expressions exactly, so that LLMs don't guess."
 authors = [{ name = "The Smarter Project" }]
 license = "AGPL-3.0"

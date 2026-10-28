@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.1](https://github.com/smarter-sh/smarter-extension-calculator/compare/v0.2.0...v0.2.1) (2026-10-28)
+
+### Performance
+
+* cache the calculator's results for an hour ([d50b7bf](https://github.com/smarter-sh/smarter-extension-calculator/commit/d50b7bffe907d0b502dd2b79a67e0fab510659f0))
+
 ## [0.2.0](https://github.com/smarter-sh/smarter-extension-calculator/compare/v0.1.0...v0.2.0) (2026-10-15)
 
 ### Features
